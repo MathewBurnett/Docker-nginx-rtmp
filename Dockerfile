@@ -49,7 +49,7 @@ RUN cd /tmp/build/nginx/${NGINX_VERSION} && \
 RUN ln -sf /dev/stdout /var/log/nginx/access.log && \
     ln -sf /dev/stderr /var/log/nginx/error.log
     
-RUN rm /opt/nginx/conf/nginx.conf
+RUN rm /etc/nginx/nginx.conf
 ADD run.sh /
 
 EXPOSE 1935
