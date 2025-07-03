@@ -1,6 +1,6 @@
 #!/bin/sh
 
-NGINX_CONFIG_FILE=/opt/nginx/conf/nginx.conf
+NGINX_CONFIG_FILE=/etc/nginx/nginx.conf
 
 
 RTMP_CONNECTIONS=${RTMP_CONNECTIONS-1024}
@@ -129,5 +129,5 @@ else
 fi
 
 echo "Starting server
-/opt/nginx/sbin/nginx -g "daemon off;"
+nginx -g "daemon off;"
 
