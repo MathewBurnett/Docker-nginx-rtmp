@@ -128,6 +128,6 @@ else
     echo "CONFIG EXISTS - Not creating!"
 fi
 
-echo "Starting server
+echo "Starting server"
 nginx -g "daemon off;"
 
